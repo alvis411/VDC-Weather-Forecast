@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_background"
+    android:layout_margin="@dimen/dp5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:padding="@dimen/dp5"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/dp5"
+        app:drawableStartCompat="@drawable/baseline_date_range_black_18"
+        tools:text="23 MArch" />
+
+    <TextView
+        android:id="@+id/tv_avg_temp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:padding="@dimen/dp5"
+        android:textColor="@color/black"
+        android:drawablePadding="@dimen/dp5"
+        app:drawableStartCompat="@drawable/baseline_light_mode_black_18"
+
+        tools:text="23 MArch" />
+
+    <TextView
+        android:id="@+id/tv_pressure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:padding="@dimen/dp5"
+        android:textColor="@color/black"
+        android:drawablePadding="@dimen/dp5"
+        app:drawableStartCompat="@drawable/baseline_play_for_work_black_18"
+        tools:text="23 MArch" />
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:padding="@dimen/dp5"
+        android:drawablePadding="@dimen/dp5"
+        app:drawableStartCompat="@drawable/baseline_invert_colors_black_18"
+        android:textColor="@color/black"
+        tools:text="23 MArch" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:padding="@dimen/dp5"
+        android:textColor="@color/black"
+        android:drawablePadding="@dimen/dp5"
+        app:drawableStartCompat="@drawable/baseline_description_black_18"
+        tools:text="23 MArch" />
+</LinearLayout>

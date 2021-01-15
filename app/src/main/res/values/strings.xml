@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">VDC Forecast</string>
+    <string name="weather_info_title">Weather Forecast</string>
+    <string name="search_city_hint">Find City</string>
+    <string name="weather_date_format">%s</string>
+    <string name="weather_avg_temp_format">Average temperature: %s%s</string>
+    <string name="weather_pressure_format">Pressure: %s</string>
+    <string name="weather_humidity_format">Humidity: %s%%</string>
+    <string name="weather_description_format">Description: %s</string>
+    <string name="temp_unit">Units</string>
+    <string name="unit_metric">&#x2103;</string>
+    <string name="unit_imperial">&#x2109;</string>
+    <string name="unit_kelvin">&#x212A;</string>
+    <string name="forecast_days">Forecast Days: </string>
+    <string name="description_not_found">Description Not Found</string>
+    <string name="no_internet_connection">No Internet Connection. Please connect to Wifi or Cellular network to get forecast.</string>
+    <string name="network_timeout">Can\'t reach server for forecast information. Please check your connectivity and network signal.</string>
+    <string name="general_error">Something went wrong. Please try again.</string>
+    <string name="empty_result_error">No weather forecast found for this city</string>
+    <string name="empty_city_query">Add your city to view weather forecast</string>
+    <string name="setting_title">Settings</string>
+    <string name="invalid_city_name">City name must be 3+ characters</string>
+    <string name="content_desc_search_setting">Search Setting</string>
+    <string name="content_desc_search_error">Search Error</string>
+</resources>

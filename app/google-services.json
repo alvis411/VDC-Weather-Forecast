@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "876500080157",
+    "project_id": "vdc--app",
+    "storage_bucket": "vdc--app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876500080157:android:c9af394edbd1e3e695d8f4",
+        "android_client_info": {
+          "package_name": "com.quypham.vdc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876500080157-cgbrd9qs5qbdfviqb2fp2blefl9aav5e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quypham.vdc",
+            "certificate_hash": "7089bec55f3c747590ad002ea5cca0119a11c398"
+          }
+        },
+        {
+          "client_id": "876500080157-idnvtjiu3bhj7f1okmlg528qve7ngicg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU5-GT51vlvq0TnsOSkE_7KOFyC16qcmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876500080157-idnvtjiu3bhj7f1okmlg528qve7ngicg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

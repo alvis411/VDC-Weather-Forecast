@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="100dp"
+    android:paddingBottom="@dimen/dp10"
+    android:background="@color/background"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/setting_title"
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50"
+        android:textColor="@color/white"
+        android:text="@string/temp_unit"
+        android:textSize="@dimen/sp15"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp10"
+        app:layout_constraintTop_toBottomOf="@id/tv_setting"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_metric"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/start_rounded_white_background"
+        android:layout_marginStart="@dimen/dp30"
+        android:text="@string/unit_metric"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/tv_unit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_kelvin"/>
+
+    <TextView
+        android:id="@+id/tv_kelvin"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/outline_white_background"
+        android:text="@string/unit_kelvin"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp5"
+        app:layout_constraintTop_toBottomOf="@id/tv_unit"
+        app:layout_constraintStart_toEndOf="@id/tv_metric"
+        app:layout_constraintEnd_toStartOf="@id/tv_imperial"/>
+
+    <TextView
+        android:id="@+id/tv_imperial"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp30"
+        android:text="@string/unit_imperial"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/end_rounded_white_background"
+        app:layout_constraintTop_toBottomOf="@id/tv_unit"
+        app:layout_constraintStart_toEndOf="@id/tv_kelvin"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_days_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp100"
+        android:textColor="@color/white"
+        android:text="@string/forecast_days"
+        android:textSize="@dimen/sp15"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginStart="@dimen/dp10"
+        app:layout_constraintTop_toBottomOf="@id/tv_imperial"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <NumberPicker
+        android:theme="@style/NumberPickerText"
+        android:id="@+id/np_days_forecast"
+        android:layout_width="@dimen/dp70"
+        android:layout_height="@dimen/dp100"
+        android:layout_marginTop="@dimen/dp15"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp5"
+        app:layout_goneMarginStart="@dimen/dp5"
+        android:maxLines="1"
+        android:gravity="center"
+        android:dividerPadding="@dimen/dp5"
+        app:layout_constraintTop_toBottomOf="@id/tv_imperial"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
